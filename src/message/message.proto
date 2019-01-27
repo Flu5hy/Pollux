@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package de.pollux.message;
+
+message ChatMessage {
+    int64 timestamp = 1;
+    string content = 2;
+}
+
+message Message {
+    oneof type {
+        ChatMessage chatMessage = 1;
+    }
+}

@@ -1,5 +1,14 @@
 [package]
-
-name = "Pollux"
+name = "pollux"
 version = "0.0.1"
 authors = [ "Rene Mattheis <renemattheis@gmail.com>" ]
+
+[dependencies]
+ws = "*"
+bytes = "*"
+prost = "*"
+prost-derive = "*"
+prost-types = "*"
+
+[build-dependencies]
+prost-build = "*"
